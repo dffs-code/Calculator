@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculadora</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <div id="title">
+        <h1>Calculadora</h1>
+    </div>
+    <div id="main">
+        <input type="text" id="display" readonly>
+        <div id="btn">
+            <table id="number">
+                <tr>
+                    <td>
+                        <button id="AC" onclick=clearAll()>AC</button>
+                        <button id="(" onclick=insertNum(id)>(</button>
+                        <button id=")" onclick=insertNum(id)>)</button>
+                        <button id="^" onclick=insertNum(id)>^</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="7" onclick=insertNum(id)>7</button>
+                        <button id="8" onclick=insertNum(id)>8</button>
+                        <button id="9" onclick=insertNum(id)>9</button>
+                        <button id="x" onclick=op(id)>x</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="4" onclick=insertNum(id)>4</button>
+                        <button id="5" onclick=insertNum(id)>5</button>
+                        <button id="6" onclick=insertNum(id)>6</button>
+                        <button id="/" onclick=op(id)>/</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="1" onclick=insertNum(id)>1</button>
+                        <button id="2" onclick=insertNum(id)>2</button>
+                        <button id="3" onclick=insertNum(id)>3</button>
+                        <button id="-" onclick=op(id)>-</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="0" onclick=insertNum(id)>0</button>
+                        <button id="." onclick=insertNum(id)>.</button>
+                        <button id="equal" onclick=equal()>=</button>
+                        <button id="+" onclick=op(id)>+</button>
+                    </td>
+                </tr>
+            </table>
+        </div><br>
+    </div>
+    <footer>
+        <p>&copy; Daniel Formigoni</p><br/>
+    </footer>
+    <script src='script.js'></script>
+</body>
+</html>
