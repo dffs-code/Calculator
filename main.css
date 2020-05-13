@@ -36,7 +36,7 @@ button{
 nav{
     margin-right: 85%;
 }
-.nav-link{
+.nav-link, #foot{
     margin-left: none;
     font-family: 'Raleway', 'Roboto', sans-serif;
     font-weight: bold;
@@ -53,7 +53,7 @@ nav{
     color: white;
     background-color: rgb(226, 53, 34);
 }
-#btn{
+.btn{
     margin-top: 5px;
 }
 #equal:hover{
@@ -73,7 +73,7 @@ nav{
     border-radius: 10px;
     border-style: none;
 }
-#main{
+.main{
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
